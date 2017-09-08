@@ -1,0 +1,16 @@
+<div class="tickerBoard">
+  <h1>Financial Markets</h1>
+
+  <div class="indexRow head">
+    <span class="name">Index</span><span class="lastPrice">Last Value</span><span class="change">Daily Change</span>
+  </div>
+
+  <div class="indexRow" *ngFor="let indicator of indicators">
+    <span class="name">{{indicator.name}}</span>
+    <span class="lastPrice">{{indicator.lastPrice}}</span>
+    <span class="change" [ngClass]="getChangeClass(indicator)">
+      <i [ngClass]="getChangeIcon(indicator)"></i>
+      <span>{{ indicator.change < 0 ? -1 * indicator.change : indicator.change }} ({{ indicator.changePercent }})</span>
+    </span>
+  </div>
+</div>

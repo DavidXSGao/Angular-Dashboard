@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css?family=Pathway+Gothic+One');
+
+main {
+  height: 100%;
+  position: relative;
+}
+
+.ComponentContainer {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  height: 100%;
+}
+
+.controlBar {
+  color: #000000;
+  position: absolute;
+  bottom: 10px;
+  left: 15px;
+  opacity: 0.15;
+}
+
+.controlBar:hover {
+  opacity: 0.75;
+}
+
+.controlBar.autoplay .controlBarPlay,
+.controlBar:not(.autoplay) .controlBarPause {
+  display: none;
+}
+
+.controlBar.autoplay .controlBarPause,
+.controlBar:not(.autoplay) .controlBarPlay {
+  display: visible;
+}

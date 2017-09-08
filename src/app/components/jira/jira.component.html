@@ -1,0 +1,16 @@
+  <div class="FlightBoard" *ngIf="issues">
+    <h1>{{sListCaption}}</h1>
+    <div class="flight head">
+      <span class="key">Flight ID</span><span class="summary">Name</span><span class="team">Team</span><span class="jra-status">Status</span><span class="component">Component</span>
+    </div>
+    <div *ngFor="let issue of issues; let i = index">
+      <div class="flight" *ngIf="i >= displayedItemLow && i < displayedItemHigh">
+          <span class="key">{{issue.key}}</span>
+          <span class="summary">{{issue.summary}}</span>
+          <span class="team">{{issue.scrumTeam}}</span>
+          <span class="jra-status {{getStatus(issue).statusClass}}">{{getStatus(issue).label}}</span>
+          <span class="component">{{issue.component}}</span>
+        </div>
+      </div>
+    <div *ngIf="footerImage" class="FlightBoard-Footer"><img src="{{footerImage}}"></div>
+  </div>

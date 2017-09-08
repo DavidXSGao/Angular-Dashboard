@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+}
+
+/* AccuWeather Widget Overrides */
+.aw-more-block, .aw-mc-promo, .aw-arrow, #link-hourly-more {
+  display: none;
+}
+
+.aw-six-hours {
+  width: 100% !important;
+}
+
+.aw-six-hours-inner {
+  zoom: 2 !important;
+}
+
+div.aw-36-hours span.aw-icon {
+  zoom: 1.25 !important;
+}
+
+/* UGH, widget using important so we gotta beat it with specificity */
+div.aw-widget-36hour-inner {
+  max-width: 100% !important;
+}
+
+div.aw-widget-36hour-inner div.aw-top-content div.aw-widget-content a.aw-current-weather div.aw-current-weather-info span.aw-weather-description {
+  font-size: 3em !important;
+}
+
+div.aw-widget-36hour-inner div.aw-widget-content div.aw-36-hours .aw-info p.aw-day-message {
+  font-size: 2.5em !important;
+}
+
+div.aw-widget-36hour-inner div.aw-fc-status tr td p {
+  padding-left: 25px;
+  font-size: 2.5em !important;
+}
+
+/* Twitter */
+a.timeline-Tweet-timestamp {
+  font-size: 5em !important;
+}

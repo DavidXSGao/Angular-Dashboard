@@ -1,0 +1,100 @@
+body {
+  background-color: #1D2A37;
+}
+
+
+.FlightBoard {
+  font-size: 38px;
+  font-family: 'Pathway Gothic One';
+  color: #FFFFFF;
+  background-color: #1D2A37;
+  width: 100%;
+  min-height: 100%;
+}
+
+.FlightBoard h1 {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.FlightBoard .flight {
+  width: 100%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 15px 0;
+}
+
+.FlightBoard .flight.head {
+  padding: 5px;
+  opacity: 0.6;
+  background-color: #1D2A37;
+}
+
+.FlightBoard .flight.head span {
+  padding-left: 0.5em;
+}
+
+.FlightBoard span {
+  display: inline-block;
+}
+
+.FlightBoard .flight .key {
+  width: 10%;
+  text-align: center;
+}
+
+.FlightBoard .flight .summary {
+  width: 40%;
+}
+
+.FlightBoard .flight .team {
+  width: 10%;
+}
+
+.FlightBoard .flight .jra-status {
+  width: 15%;
+}
+
+.FlightBoard .flight .component {
+  width: 20%;
+}
+
+.FlightBoard-Footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+
+.FlightBoard-Footer img {
+  padding-top: 50px;
+  display: block;
+  margin: 0 auto;
+  max-width: 300px;
+}
+
+.flight:not(.head) .jra-status {
+  text-transform: uppercase;
+}
+
+.FlightBoard .arrived {
+  color: #0AFF1B;
+}
+
+.FlightBoard .delayed {
+  color: #E74C3C;
+}
+
+.FlightBoard .ontime {
+  color: #0CEAF6;
+}
+
+.FlightBoard .enroute {
+  color: #EBAE3A;
+}
+
+.FlightBoard .turbulence {
+  color: #E67E22;
+}

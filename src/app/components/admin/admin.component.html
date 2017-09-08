@@ -1,0 +1,39 @@
+<div class="errorDisplay alert alert-warning" *ngIf="error">{{error}}</div>
+<div class="alert alert-success" *ngIf="success">{{success}}</div>
+
+<form>
+  <div class="form-group">
+    <label for="release-version">Release Version</label>
+    <input type="text" id="release-version" name="release-version" placeholder="Release Version" [(ngModel)]="release.version">
+  </div>
+  <div class="form-group">
+    <label for="release-date">Release Date</label>
+    <input type="text" id="release-date" name="release-date" placeholder="Release Date" [(ngModel)]="release.scheduleDate">
+  </div>
+
+  <div class="form-group form-inline" *ngFor="let item of release.releaseItems;let idx=index">
+    <div class="form-group">
+      <label for="release-item-{{idx}}">Component: </label>
+      <input type="text" class="form-control" id="release-item-{{idx}}" name="release-item-{{idx}}" placeholder="Release Component..." [(ngModel)]="item.component">
+    </div>
+    <div class="form-group">
+      <label for="release-item-{{idx}}">Subcomponents: </label>
+      <input type="text" class="form-control" id="release-subcomp-{{idx}}" name="release-subcomp-{{idx}}" placeholder="Subcomponents..." [(ngModel)]="item.subcomponents">
+    </div>
+    <div class="form-group">
+      <label for="release-time-{{idx}}">Scheduled Time: </label>
+      <input type="text" class="form-control" id="release-time-{{idx}}" name="release-time-{{idx}}" placeholder="Scheduled Time" [(ngModel)]="item.scheduledTime">
+    </div>
+    <select class="form-control" name="release-status-{{idx}}" id="release-status-{{idx}}" [(ngModel)]="item.status">
+      <option [selected]="item.status == 'scheduled'" value="scheduled">Scheduled</option>
+      <option [selected]="item.status == 'arrived'" value="arrived">Arrived</option>
+      <option [selected]="item.status == 'enroute'" value="enroute">Enroute</option>
+      <option [selected]="item.status == 'turbulence'" value="turbulence">Turbulence</option>
+      <option [selected]="item.status == 'cancelled'" value="cancelled">Cancelled</option>
+    </select>
+  </div>
+
+  <button class="btn btn-default" (click)="createNewItem()">Add Release Item</button>
+  <button class="btn btn-primary" (click)="save()">Save Release Plan</button>
+  <button class="btn btn-danger">Reset</button>
+</form>

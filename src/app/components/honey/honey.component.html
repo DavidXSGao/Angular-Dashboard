@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<h3 id="head">Honey {{feedName}} Updates</h3>
+<div *ngFor="let post of myPosts" >
+  <div class = "postWords">
+    <div id="title"> {{post.title}} </div>
+    <span id = "span">
+    <img src={{post.author_image}} class="img-rounded" width="50" height="50"/> <a class="authors" href="honey.is/home/#user/{{post.authorID}}">  {{post.author}}</a>
+    <i class = "fa fa-eye"></i> {{post.views}}
+    <i class = "glyphicon glyphicon-comment"> </i> {{post.comment_count}}
+    <i class="glyphicon glyphicon-heart"></i> {{post.likes}}
+    </span>
+    <div id="date"> {{post.date}} </div>
+  </div>
+</div>
+

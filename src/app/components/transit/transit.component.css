@@ -1,0 +1,48 @@
+.transitBoard {
+  background-color: #1D2A37;
+  min-height: 100%;
+  font-family: "Pathway Gothic One";
+  color: #FFFFFF;
+  font-size: 38px;
+}
+
+.transitBoard h1 {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 10px;
+}
+
+.transitBoard h2 {
+  text-align: center;
+}
+
+.transitBoard .status {
+  width: 100%;
+  font-size: 28px;
+  padding: 5px 5px 30px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 15px 0;
+  position: relative;
+}
+
+.status .tweetTime {
+  font-size: 24px;
+  position: absolute;
+  bottom: 5px;
+  right: 15px;
+}
+
+.orgNoticeBoard {
+  width: 49%;
+  display: inline-block;
+}
+
+#goBoard {
+  position: absolute;
+  left: 0;
+}
+
+#ttcBoard {
+  position: absolute;
+  right: 0;
+ }

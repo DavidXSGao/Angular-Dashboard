@@ -1,0 +1,12 @@
+<div class="ComponentContainer">
+
+<main>
+	<router-outlet></router-outlet>
+</main>
+
+  <div class="controlBar" [ngClass]="{'autoplay': widgetService.isAutoplayEnabled()}">
+    <button class="btn btn-default controlBarPause" (click)="toggleAutoplay()">Pause</button>
+    <button class="btn btn-default controlBarPlay" (click)="toggleAutoplay()">Play</button>
+  </div>
+
+</div>

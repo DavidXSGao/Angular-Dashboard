@@ -1,0 +1,11 @@
+<div *ngIf="myNews">
+  <h3 id="head">News Updates</h3>
+<div class="row">
+  <div *ngFor="let newsItem of myNews" class="postWords">
+      <header class="feedname">{{newsItem.contentSnippet}}</header>
+        <p><a href="{{newsItem.link}}">{{newsItem.title}}</a></p>
+        <span class="content">{{newsItem.description}}</span>
+        <div class="date">{{newsItem.publishedDate}}</div>
+    </div>
+  </div>
+</div>

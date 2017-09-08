@@ -1,0 +1,43 @@
+.postWords{
+  position: relative;
+  font-size: 25pt;
+  padding: 15px;
+  margin-left: 15px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-right: 15px;
+  background : #ddffff;
+  border-radius: 25px;
+  border-style: groove;
+
+}
+
+.glyphicon-heart{
+  color: #ff0000;
+}
+
+#head{
+  margin-top: 25px;
+  text-align: center;
+  font-size: 28pt;
+}
+
+#date{
+  margin-top: 5px;
+  margin-bottom: 17px;
+  padding: 15px;
+  float: right;
+  font-size: 65%;
+}
+
+#title{
+  position: relative;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  padding: 5px;
+  font-size: 34pt;
+}
+
+#span{
+  padding: 15px;
+}

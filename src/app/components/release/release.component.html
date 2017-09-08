@@ -1,0 +1,23 @@
+<div class="releaseSchedule row">
+  <div class="col-lg-4">
+    <h1>Active Release Schedule</h1>
+    <h2 *ngIf="releaseInformation">Targeted for Release {{releaseInformation.version}}</h2>
+    <div class="footerImage">
+      <img class="footerImage" *ngIf="footerImage" src="{{footerImage}}">
+    </div>
+  </div>
+
+  <div class="scheduledItemList col-lg-8">
+    <div class="scheduledItem head">
+      <span class="item">Item</span><span class="time">Scheduled Time</span><span class="status">Status</span>
+    </div>
+    <div *ngIf="!releaseInformation" class="scheduledItem">
+      Error communicating with release server...
+    </div>
+
+  <div class="scheduledItem" [ngClass]="{cancelled: item.status=='cancelled'}" *ngFor="let item of releaseItems">
+      <span class="item">{{item.component}}<small>{{item.subcomponents}}</small></span>
+      <span class="time">{{item.scheduledTime}}</span>
+      <span class="status {{item.status}}">{{item.status}}</span>
+  </div>
+</div>

@@ -1,0 +1,38 @@
+{
+  "release": {
+    "version": "4.11 (A + M)",
+    "scheduleDate": "April 11 2017",
+    "releaseItems": [
+      {
+        "component": "DB Release",
+        "scheduledTime": "9:15 A.M.",
+        "subcomponents": "",
+        "status": "arrived"
+      },
+      {
+        "component": "Platform Release",
+        "scheduledTime": "10:15 A.M.",
+        "subcomponents": "RTRScripts, VFMIO",
+        "status": "turbulence"
+      },
+      {
+        "component": "Platform - Titan",
+        "scheduledTime": "11:15 A.M.",
+        "subcomponents": "",
+        "status": "cancelled"
+      },
+      {
+        "component": "Vizlly",
+        "scheduledTime": "1:15 P.M.",
+        "subcomponents": "Hyperion, Webbuilder",
+        "status": "enroute"
+      },
+      {
+        "component": "QA Sanity",
+        "scheduledTime": "Ongoing",
+        "subcomponents": "",
+        "status": "scheduled"
+      }
+    ]
+  }
+}

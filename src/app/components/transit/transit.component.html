@@ -1,0 +1,19 @@
+<div class="transitBoard">
+  <h1>Transit Updates</h1>
+  <div id="goBoard" class="orgNoticeBoard">
+    <h2>GO Transit</h2>
+    <div  class="status" *ngFor="let tweet of goNotices">
+      <span class="tweetText">{{tweet.text}}</span>
+      <span class="tweetTime">{{tweet.created_at | date:'d MMM H:mm'}}</span>
+    </div>
+  </div>
+
+  <div id="ttcBoard" class="orgNoticeBoard">
+    <h2>TTC</h2>
+    <div class="status" *ngFor="let tweet of ttcNotices">
+      <span class="tweetText">{{tweet.text}}</span>
+      <span class="tweetTime">{{tweet.created_at | date:'d MMM H:mm'}}</span>
+    </div>
+  </div>
+</div>
+

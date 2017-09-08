@@ -1,0 +1,61 @@
+.tickerBoard {
+  background-color: #1D2A37;
+  min-height: 100%;
+  color: #FFFFFF;
+  font-family: 'Pathway Gothic One';
+  font-size: 38px;
+}
+
+.tickerBoard h1 {
+  margin: 0;
+  padding-top: 20px;
+  padding-left: 40px;
+  font-size: 38px;
+}
+
+.indexRow {
+  position: relative;
+  display: block;
+  width: 95%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 15px 0;
+  left: 2.5%;
+}
+
+.indexRow.head {
+  padding: 5px;
+  opacity: 0.6;
+  background-color: #1D2A37;
+}
+
+.indexRow span {
+  display: inline-block;
+}
+
+.indexRow .name {
+  display: inline-block;
+  padding-left: 1em;
+  width: 40%;
+}
+
+.indexRow .lastPrice {
+  display: inline-block;
+  width: 15%;
+}
+
+.indexRow .change {
+  width: 35%
+}
+
+.indexRow .change .glyphicon {
+  top: 8px;
+}
+
+.indexRow .change-loss {
+  color: red;
+}
+
+.indexRow .change-gain {
+  color: #57D332;
+}

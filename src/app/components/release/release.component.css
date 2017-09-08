@@ -1,0 +1,124 @@
+.releaseSchedule {
+  position: relative;
+  font-size: 38px;
+  font-family: 'Pathway Gothic One';
+  color: #FFFFFF;
+  background-color: #1D2A37;
+  width: 100%;
+  min-height: 100%;
+}
+
+.row {
+  margin: 0;
+}
+
+.releaseSchedule h1 {
+  display: inline-block;
+  padding-top: 130px;
+  padding-bottom: 20px;
+  font-size: 120px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.releaseSchedule h2 {
+  display: inline-block;
+  padding-bottom: 25px;
+  width: 100%;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.releaseSchedule .scheduledItem {
+  width: 90%;
+  padding: 5px;
+  background-color: rgba(255, 255, 255, 0.1);
+  margin: 15px 0;
+}
+
+.releaseSchedule .scheduledItem.head {
+  padding: 5px;
+  opacity: 0.6;
+  background-color: #1D2A37;
+}
+
+.releaseSchedule .flight.head span {
+  padding-left: 0.5em;
+}
+
+.releaseSchedule span {
+  display: inline-block;
+}
+
+.releaseSchedule .scheduledItem .item {
+  width: 50%;
+}
+
+.releaseSchedule .scheduledItem .time {
+  width: 20%;
+}
+
+.releaseSchedule .scheduledItem .status {
+  width: 20%;
+}
+
+
+.footerImage {
+  width: 100%;
+  text-align: center;
+}
+
+.footerImage img {
+  max-width: 300px;
+}
+
+.releaseSchedule .scheduledItem:not(.head) .status {
+  text-transform: uppercase;
+}
+
+.releaseSchedule .scheduledItem {
+  padding: 15px 0 15px 20px;
+}
+
+.releaseSchedule .scheduledItem .item small {
+  color: #FFFFFF;
+  opacity: 0.6;
+  font-size: 75%;
+  padding-left: 0.5em;
+}
+
+.releaseSchedule .arrived {
+  color: #0AFF1B;
+}
+
+.releaseSchedule .delayed {
+  color: #E74C3C;
+}
+
+.releaseSchedule .scheduled {
+  color: #0CEAF6;
+}
+
+.releaseSchedule .enroute {
+  color: #EBAE3A;
+}
+
+.releaseSchedule .turbulence {
+  color: #E67E22;
+}
+
+.releaseSchedule .status.cancelled {
+  color: #E74C3C;
+}
+
+.releaseSchedule .cancelled {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.releaseSchedule .cancelled span {
+  opacity: 0.30;
+
+}
+
